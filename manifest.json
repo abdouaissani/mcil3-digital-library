@@ -1,0 +1,23 @@
+{
+    "name": "MCIL 3 – Digital Library",
+    "short_name": "MCIL 3",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#0f172a",
+    "theme_color": "#2563eb",
+    "description": "المكتبة الجامعية الرقمية لتخصص MCIL 3",
+    "orientation": "any",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "favicon.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "favicon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
