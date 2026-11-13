@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Search engine metadata -->
+  <title>MCIL 3 – Digital Library | المكتبة الرقمية لطلبة MCIL 3</title>
+  <meta name="description" content="MCIL 3 Digital Library: مكتبة رقمية لطلبة MCIL 3 تضم المحاضرات، أعمال TD وTP، والامتحانات والموارد الدراسية.">
+  <meta name="keywords" content="MCIL3, MCIL 3, MCIL, Digital Library, المكتبة الرقمية, محاضرات MCIL 3, TD, TP, امتحانات">
+  <meta name="author" content="MCIL 3 Digital Library">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://mcil3.netlify.app/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MCIL 3 Digital Library">
+  <meta property="og:title" content="MCIL 3 – Digital Library">
+  <meta property="og:description" content="المكتبة الرقمية لطلبة MCIL 3: محاضرات، TD، TP وامتحانات.">
+  <meta property="og:url" content="https://mcil3.netlify.app/">
+  <meta property="og:image" content="https://mcil3.netlify.app/icons/Icon-512.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="MCIL 3 – Digital Library">
+  <meta name="twitter:description" content="المكتبة الرقمية لطلبة MCIL 3.">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "MCIL 3 Digital Library",
+    "alternateName": ["MCIL3", "المكتبة الرقمية MCIL 3"],
+    "url": "https://mcil3.netlify.app/",
+    "description": "مكتبة رقمية تعليمية لطلبة MCIL 3 تضم المحاضرات وأعمال TD وTP والامتحانات."
+  }
+  </script>
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="MCIL 3 Library">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>MCIL 3 – Digital Library | المكتبة الرقمية</title>
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Syncfusion Flutter PDF Viewer Scripts for Web -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+  <script type="text/javascript">
+    window.pdfjsLib = window['pdfjs-dist/build/pdf'];
+    if (window.pdfjsLib) {
+      pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.worker.min.js";
+    }
+  </script>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0f172a;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    .loading-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #0b1120 0%, #0f172a 100%);
+      color: #ffffff;
+      z-index: 9999;
+    }
+    .spinner {
+      width: 48px;
+      height: 48px;
+      border: 4px solid rgba(37, 99, 235, 0.2);
+      border-top-color: #2563eb;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    .loading-title {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+    .loading-subtitle {
+      margin-top: 6px;
+      font-size: 13px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+  <div id="loading" class="loading-container">
+    <div class="spinner"></div>
+    <div class="loading-title">MCIL 3 – Digital Library</div>
+    <div class="loading-subtitle">جاري تحميل المكتبة الرقمية...</div>
+  </div>
+
+  <script>
+    window.addEventListener('flutter-first-frame', function () {
+      const loading = document.getElementById('loading');
+      if (loading) {
+        loading.style.opacity = '0';
+        loading.style.transition = 'opacity 0.4s ease';
+        setTimeout(() => loading.remove(), 400);
+      }
+    });
+  </script>
+  <noscript>
+    <main lang="ar" dir="rtl">
+      <h1>MCIL 3 – المكتبة الرقمية</h1>
+      <p>مكتبة رقمية لطلبة MCIL 3 تضم المحاضرات، الأعمال الموجهة (TD)، الأعمال التطبيقية (TP)، والامتحانات والموارد الدراسية.</p>
+      <p>يرجى تفعيل JavaScript لفتح التطبيق واستعمال جميع ميزاته.</p>
+    </main>
+  </noscript>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
